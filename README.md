@@ -54,8 +54,7 @@ The agent:
 > **Prompt**: I have to go to Naran, what should I pack?
 
 ✅ Output:
-json
-```
+```json
 {
   "location": "Naran",
   "weather": {
@@ -65,6 +64,31 @@ json
   "packing_list": [
     "Sunscreen", "Light jacket", "Water bottle", "Sunglasses",
     "Comfortable shoes", "Hat", "Umbrella", "Snacks"
+  ]
+}
+```
+
+### 🔸 Input 3 (multi agent):
+> **Prompt**: I want a beach vacation
+
+✅ Output:
+```json
+{
+  "destination_recommendation": {
+    "location": "Bali",
+    "trip_type": "beach"
+  },
+  "weather_info": {
+    "condition": "Patchy rain nearby",
+    "temp": 28.6
+  },
+  "packing_list": [
+    "Umbrella",
+    "Light rain jacket",
+    "Waterproof shoes",
+    "Comfortable clothing",
+    "Hat",
+    "Sunscreen"
   ]
 }
 ```
